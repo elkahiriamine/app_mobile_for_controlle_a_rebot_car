@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carControle.carMobile2">
+    <!-- Permissions for Bluetooth access -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/car_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/car_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.carControle.carMobile2.BetweenLoginConnection"></activity>
+        <activity android:name="com.carControle.carMobile2.HistoryData" />
+        <activity android:name="com.carControle.carMobile2.Register_Data" />
+        <activity android:name="com.carControle.carMobile2.MainActivity" />
+        <activity android:name="com.carControle.carMobile2.HelpingActivity" />
+        <activity android:name="com.carControle.carMobile2.PrintDevice" />
+        <activity android:name="com.carControle.carMobile2.ScreenSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.carControle.carMobile2.LoginPage" />
+    </application>
+
+</manifest>

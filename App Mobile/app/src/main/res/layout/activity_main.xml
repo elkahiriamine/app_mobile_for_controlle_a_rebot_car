@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/round_background2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        android:translationY="-40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textBluetoothStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth is Disconnected"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Connect" />
+
+            <Button
+                android:id="@+id/buttonDisconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Disconnect" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="316dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        android:translationX="-30dp"
+        android:translationY="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385">
+
+        <TextView
+            android:id="@+id/textLedStatus"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:text="Car stop now"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:translationX="35dp" />
+
+        <Button
+            android:id="@+id/buttonForward"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/ic_upward"
+            android:textColor="@color/colorPrimaryDark"
+            android:translationX="138dp"
+            android:translationY="30dp" />
+
+        <Button
+            android:id="@+id/buttonBackward"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/ic_backward"
+            android:textColor="@color/colorPrimaryDark"
+            android:translationX="138dp"
+            android:translationY="120dp" />
+
+        <Button
+            android:id="@+id/buttonTurn_left"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/ic_left"
+            android:textColor="@color/colorPrimaryDark"
+            android:translationX="58dp"
+            android:translationY="-40dp" />
+
+        <Button
+            android:id="@+id/buttonTurn_right"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/ic_right"
+            android:textColor="@color/colorPrimaryDark"
+            android:translationX="220dp"
+            android:translationY="-110dp" />
+
+        <Button
+            android:id="@+id/buttonTurn_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@android:drawable/alert_dark_frame"
+            android:textColor="@color/colorPrimaryDark"
+            android:translationX="250dp"
+            android:translationY="-80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="335dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="52dp"
+        android:orientation="vertical"
+        android:translationY="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_help"
+            android:onClick="helpingInfo"
+            android:textColor="@color/colorPrimaryDark"
+            android:translationX="230dp"
+            android:translationY="20dp" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_baseline_exit_to_app_24"
+            android:textColor="@color/colorPrimaryDark"
+            android:translationX="50dp"
+            android:translationY="-30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:translationY="-20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/gonext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="history" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_botton"
+            android:text="LOG OUT"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LED"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/leftMove"
+        android:layout_width="104dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="160dp"
+        android:text="Left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightMove"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rightMove"
+        android:layout_width="104dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="160dp"
+        android:text="Right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/defual"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="188dp"
+        android:layout_weight="1"
+        android:background="@drawable/round_edittext"
+        android:text="Default"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightMove"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/leftMove" />
+</androidx.constraintlayout.widget.ConstraintLayout>
